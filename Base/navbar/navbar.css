@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: #686D76;
+    height: 100vh;                   /* full viewport height */
+    display: flex;
+    align-items: center;             /* vertical centering */
+    justify-content: flex-start;     /* push content to the left side */
+    padding-left: 10vw;              /* adjust how far from the left */
+}
+
+.grid-list {  /*make this responsive later */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height:260px;
+  width:260px;
+  margin: auto 0;              /* centers the UL */
+  max-width: 660px; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+  grid-template-rows: repeat(3, auto);    /* 3 rows */
+  gap: 32px;  /* optional spacing */
+}.grid-list li {
+  background: #f2f2f2;
+  border-radius: 5px;
+
+  /* centers text vertically + horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* makes them square */
+  aspect-ratio: 1 / 1;
+
+  /* spacing inside the square */
+  font-size: 1.2rem;
+}
+
+

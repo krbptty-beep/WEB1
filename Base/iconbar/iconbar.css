@@ -1,0 +1,45 @@
+
+
+ul {
+  list-style-type: none;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+   box-shadow: 0  -5px 0 0 rgba(0, 0, 0, 1) inset;
+}
+
+ul li a {
+  display: flex;
+  color: white;
+  padding: 0.73vw 0.83vw;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.05vw;
+}
+
+ul li a:hover {
+  background-color: #111;
+}
+
+.left {
+  display: flex;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.right {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  width: fit-content;
+}
+
+/* ACTIVE STATE FIXED: apply to the <a>, not the <li> */
+.right a.active,
+.left a.active {
+  background-color: #04AA6D;
+}
+
